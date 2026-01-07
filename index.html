@@ -6,57 +6,65 @@
 <title>Wonder Pops</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+</style>
+
 </head>
 
-<body class="bg-gray-950 text-white h-screen overflow-hidden flex flex-col">
+<body class="bg-gray-950 text-white min-h-screen flex flex-col">
 
-<!-- YELLOW BANNER KEPT SAME - ONLY TEXT ADDED -->
-<header class="bg-yellow-400 text-black h-20 md:h-24 text-center flex items-center justify-center">
+<header class="bg-yellow-400 text-black py-3 md:py-2 text-center flex items-center justify-center">
   
-  <h1 class="text-2xl md:text-3xl font-extrabold">
-    Wonder Pops – Cinema Style Popcorn at Home
+  <h1 class="text-xl md:text-2xl font-extrabold px-2">
+    Wonder Pops – theatre Style Popcorn at Home
   </h1>
 
 </header>
 
-<main class="flex-grow flex items-center justify-center px-4">
+<main class="flex-grow flex items-center justify-center px-2 md:px-4">
 
-  <div class="flex items-center justify-center max-w-4xl w-full">
+  <div class="flex items-center justify-center max-w-3xl w-full">
 
     <div class="text-center">
       <img src="product.jpeg"
            alt="Wonder Pops Product"
-           class="rounded-2xl shadow-2xl max-h-[55vh] object-contain border-2 border-yellow-400">
+           class="rounded-2xl shadow-2xl max-h-[45vh] md:max-h-[60vh] object-contain border-2 border-yellow-400">
     </div>
 
   </div>
 
 </main>
 
-<section class="grid grid-cols-1 md:grid-cols-2 gap-6 px-10 pb-4 text-center max-w-2xl mx-auto">
+<section class="grid grid-cols-1 md:grid-cols-2 gap-4 px-4 md:px-10 pb-3 text-center max-w-lg mx-auto">
 
-<div class="bg-gray-900 p-4 rounded-2xl shadow-xl">
-  <h3 class="text-lg font-bold text-yellow-400">Mexican Cheese</h3>
-  <p class="text-[10px] text-gray-300">Spicy cheesy punch for bold taste lovers.</p>
+<div class="bg-gray-900 p-3 md:p-4 rounded-2xl shadow-xl">
+  <h3 class="text-base md:text-lg font-bold text-yellow-400">Mexican Cheese</h3>
+  <p class="text-xs md:text-[10px] text-gray-300">Spicy cheesy punch for bold taste lovers.</p>
 </div>
 
-<div class="bg-gray-900 p-4 rounded-2xl shadow-xl">
-  <h3 class="text-lg font-bold text-yellow-400">Sour Cream & Onion</h3>
-  <p class="text-[10px] text-gray-300">Creamy and tangy gourmet seasoning.</p>
+<div class="bg-gray-900 p-3 md:p-4 rounded-2xl shadow-xl">
+  <h3 class="text-base md:text-lg font-bold text-yellow-400">Sour Cream & Onion</h3>
+  <p class="text-xs md:text-[10px] text-gray-300">Creamy and tangy gourmet seasoning.</p>
 </div>
 
 </section>
 
-<section class="text-center my-4">
+<section class="text-center my-2 md:my-4">
   <button onclick="openWhatsApp()"
-    class="bg-green-600 hover:bg-green-500 transition-all text-white px-16 py-3 rounded-full text-lg font-semibold shadow-2xl">
+    class="bg-green-600 hover:bg-green-500 transition-all text-white px-10 md:px-16 py-2 md:py-3 rounded-full text-base md:text-lg font-semibold shadow-2xl">
     Order Now
   </button>
 
-  <p class="mt-3 text-[10px] text-gray-400">
+  <p class="mt-2 text-xs md:text-[10px] text-gray-300"> 
     Serves 2 | Ready Under 5 Minutes | Contact: 7397765586
   </p>
 </section>
+
 
 <script>
 
